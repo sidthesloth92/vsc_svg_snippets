@@ -1,11 +1,117 @@
 {
-	"svg-svg" : {
+	"svg-a": {
+		"prefix": "svg-a",
+		"body": [
+			"<a xlink:href=\"$1\" target=\"$2\">",
+			"\t$3",
+  			"</a>$4"
+		],
+		"description": "The SVG Anchor Element (<a>) defines a hyperlink"
+	},
+	"svg-circle": {
+		"prefix": "svg-circle",
+		"body": [
+			"<circle cx=\"$1\" cy=\"$2\" r=\"$3\" style=\"$4\"/>$5"
+		],
+		"description": "The circle element is an SVG basic shape, used to create circles based on a center point and a radius."
+	},
+	"svg-defs": {
+		"prefix": "svg-defs",
+		"body": [
+			"<defs>",
+			"\t$1",
+			"</defs>$2"
+		],
+		"description": "<defs> element is used to embed definitions that can be reused inside an SVG image."
+	},
+	"svg-ellipse": {
+		"prefix": "svg-ellipse",
+		"body": [
+			"<ellipse cx=\"$1\" cy=\"$2\" rx=\"$3\" ry=\"$4\" style=\"$5\"/>$6"
+		],
+		"description": "The ellipse element is an SVG basic shape, used to create ellipses based on a center coordinate, and both their x and y radius."
+	},
+	"svg-g": {
+		"prefix": "svg-g",
+		"body": [
+			"<g>",
+			"\t$1",
+			"</g>$2"
+		],
+		"description": "<g> element is used to group SVG shapes together"
+	},
+	"svg-image": {
+		"prefix": "svg-image",
+		"body": [
+			"<image xlink:href=\"$1\" x=\"$2\" y=\"$3\" height=\"$4\" width=\"$5\" />$6"
+		],
+		"description": "The SVG Image Element (<image>) allows a raster image to be included in an SVG document."
+	},
+	"svg-line": {
+		"prefix": "svg-line",
+		"body": [
+			"<line x1=\"$1\" y1=\"$2\"",
+			"\t  x2=\"$3\" y2=\"$4\"",
+			"\t  stroke=\"$5\"",
+			"\t  stroke-width=\"$6\"/>$7"
+		],
+		"description": "The line element is an SVG basic shape, used to create a line connecting two points."
+	},
+	"svg-path": {
+		"prefix": "svg-path",
+		"body": [
+			"<path d=\"$1\"",
+			"\t fill=\"$2\" stroke=\"$3\" stroke-width=\"$4\" />$5"
+		],
+		"description": "The path element is the generic element to define a shape. All the basic shapes can be created with a path element."
+	},
+	"svg-polygon": {
+		"prefix": "svg-polygon",
+		"body": [
+			"<polygon points=\"$1\" style=\"$2\"/>$3"
+		],
+		"description": "The polygon element defines a closed shape consisting of a set of connected straight line segments."
+	},
+	"svg-polyline": {
+		"prefix": "svg-polyline",
+		"body": [
+			"<polyline points=\"$1\" style=\"$2\"/>$3"
+		],
+		"description": "The polyline element is an SVG basic shape that creates straight lines connecting several points."
+	},
+	"svg-rect": {
+		"prefix": "svg-rect",
+		"body": [
+			"<rect x=\"$1\" y=\"$2\" width=\"$3\" height=\"$4\" style=\"$5\"/>$6"
+		],
+		"description": "The rect element is an SVG basic shape, used to create rectangles based on the position of a corner and their width and height. "
+	},
+	"svg-svg": {
 		"prefix": "svg-svg",
-		"body" : [
-			"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"$1\" height=\"$2\" viewBox=\"$3\">",
+		"body": [
+			"<svg width=\"$1\" height=\"$2\"",
+			"\t viewBox=\"$3\" version=\"1.1\"",
+			"\t xmlns=\"http://www.w3.org/2000/svg\"",
+			"\t xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
 			"\t$4",
 			"</svg>$5"
 		],
 		"description": "The svg element can be used to embed an SVG fragment inside the current document."
+	},
+	"svg-symbol": {
+		"prefix": "svg-symbol",
+		"body": [
+			"<symbol id=\"$1\" viewBox=\"$2\">",
+			"\t$3",
+			"</symbol>$4"
+		],
+		"description": "The symbol element is used to define graphical template objects which can be instantiated by a <use> element."
+	},
+	"svg-use": {
+		"prefix": "svg-use",
+		"body": [
+			"<use xlink:href=\"$1\" x=\"$2\" y=\"$3\" />$4"
+		],
+		"description": "The use element takes nodes from within the SVG document, and duplicates them somewhere else."
 	}
 }
