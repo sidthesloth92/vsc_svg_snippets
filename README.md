@@ -6,7 +6,9 @@ involved while writing SVG elements
 
 ## Usage
 
-Type svg- and select the required SVG element from the intellisense dropdown to get it's snippet.
+Type svg- and select the required SVG element from the intellisense dropdown.
+
+![alt text](http://s19.postimg.org/onxiqdwld/preview.gif "Snippets Preview")
 
 ## Installation
 

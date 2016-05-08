@@ -1,9 +1,9 @@
 {
     "name": "svg-snippets",
-    "displayName": "SVG Snippet",
+    "displayName": "SVG Snippets",
     "publisher": "sidthesloth",
     "description": "A basic SVG snippet generator.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "license": "MIT",
     "icon": "images/icon.png",
     "galleryBanner": {
