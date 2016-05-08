@@ -58,6 +58,13 @@
 		],
 		"description": "The clipping path restricts the region to which paint can be applied."
 	},
+	"svg-cursor": {
+		"prefix": "svg-cursor",
+		"body": [
+			"<cursor x=\"$1\" y=\"$2\" xlink:href=\"$3\"/>"
+		],
+		"description": "The cursor element can be used to define a platform-independent custom cursor. "
+	},
 	"svg-defs": {
 		"prefix": "svg-defs",
 		"body": [
@@ -83,11 +90,10 @@
 		],
 		"description": "The ellipse element is an SVG basic shape, used to create ellipses based on a center coordinate, and both their x and y radius."
 	},
-	
 	"svg-feBlend": {
 		"prefix": "svg-feBlend",
 		"body": [
-			"<feBlend  in=\"$1\" in2=\"$2\"/>$3"	
+			"<feBlend  in=\"$1\" in2=\"$2\"/>$3"
 		],
 		"description": "The blend filter can blend input from multiple filters into one."
 	},
@@ -95,25 +101,33 @@
 		"prefix": "svg-feColorMatrix",
 		"body": [
 			"<feColorMatrix in=\"$1\"",
-      		"\ttype=\"$2\"",
-      		"\tvalues=\"$3\"/>$4"
+			"\ttype=\"$2\"",
+			"\tvalues=\"$3\"/>$4"
 		],
 		"description": "This filter changes colors based on a transformation matrix. Every pixel's color value (represented by an [R,G,B,A] vector) is matrix multiplied to create a new color."
+	},
+	"svg-feComponentTransfer": {
+		"prefix": "svg-feComponentTransfer",
+		"body": [
+			"<feComponentTransfer in=\"$1\">",
+			"\t$2",
+			"</feComponentTransfer>$3"
+		],
+		"description": "The color of each pixel is modified by changing each channel (R, G, B, and A) to the result of what the children <feFuncR>, <feFuncB>, <feFuncG>, and <feFuncA> return."
 	},
 	"svg-feComposite": {
 		"prefix": "svg-feComposite",
 		"body": [
 			"<feComposite in=\"$1\" in2=\"$2\"",
-                 "\toperator=\"$3\" k1=\"$4\" k2=\"$5\" k3=\"$6\" k4=\"$7\"/>$8"
+			"\toperator=\"$3\" k1=\"$4\" k2=\"$5\" k3=\"$6\" k4=\"$7\"/>$8"
 		],
 		"description": "This filter primitive performs the combination of two input images pixel-wise in image space using one of the Porter-Duff compositing operations: over, in, atop, out, xor. "
 	},
-	
 	"svg-feDiffuseLighting": {
 		"prefix": "svg-feDiffuseLighting",
 		"body": [
 			"<feDiffuseLighting in=\"$1\" result=\"$2\" lighting-color=\"$3\">",
-      		"\t$4",
+			"\t$4",
 			"</feDiffuseLighting>$5"
 		],
 		"description": "This filter primitive lights an image using the alpha channel as a bump map."
@@ -125,7 +139,20 @@
 		],
 		"description": "This filter primitive define a distant light source that can be used within a lighting filter primitive : <feDiffuseLighting> or <feSpecularLighting>."
 	},
-
+	"svg-feFlood": {
+		"prefix": "svg-feFlood",
+		"body": [
+			"<feFlood flood-color=\"$1\" flood-opacity=\"$2\"/>$3"
+		],
+		"description": "The filter fills the filter subregion with the color and opacity defined by flood-color and flood-opacity."
+	},
+	"svg-feImage": {
+		"prefix": "svg-feImage",
+		"body": [
+			"<feImage xlink:href=\"$1\" preserveAspectRatio=\"$2\" />$3"
+		],
+		"description": "The filter blurs the input image by the amount specified in stdDeviation, which defines the bell-curve."
+	},
 	"svg-feGaussianBlur": {
 		"prefix": "svg-feGaussianBlur",
 		"body": [
@@ -149,6 +176,13 @@
 		],
 		"description": "The feMergeNode takes the result of another filter to be processed by its parent <feMerge>."
 	},
+	"svg-feMorphology": {
+		"prefix": "svg-feMorphology",
+		"body": [
+			"<feMorphology in=\"$1\" operator=\"$2\" radius=\"$3\" />$4"
+		],
+		"description": "This filter is used to erode or dilate the input image. It's usefulness lies especially in fattening or thinning effects."
+	},
 	"svg-feOffset": {
 		"prefix": "svg-feOffset",
 		"body": [
@@ -163,16 +197,35 @@
 		],
 		"description": ""
 	},
+	"svg-feSpecularLighting": {
+		"prefix": "svg-feSpecularLighting",
+		"body": [
+			"<feSpecularLighting in=\"$1\" surfaceScale=\"$2\" specularConstant=\"$3\" specularExponent=\"$4\" kernelUnitLength=\"$5\"/>$6"
+		],
+		"description": "This filter primitive lights a source graphic using the alpha channel as a bump map."
+	},
 	"svg-feSpotLight": {
 		"prefix": "svg-feSpotLight",
 		"body": [
 			"<feSpotLight x=\"$1\" y=\"$2\" z=\"$3\" limitingConeAngle=\"$4\"",
-                   "\tpointsAtX=\"$5\" pointsAtY=\"$6\" pointsAtZ=\"$7\"/>$8"
+			"\tpointsAtX=\"$5\" pointsAtY=\"$6\" pointsAtZ=\"$7\"/>$8"
 		],
 		"description": "The feSpotLight element is one of the ligth source elements used for SVG files."
 	},
-	
-	
+	"svg-feTile": {
+		"prefix": "svg-feTile",
+		"body": [
+			"<feTile in=\"$1\" />$2"
+		],
+		"description": "An input image is tiled and the result used to fill a target. The effect is similar to the one of a <pattern>."
+	},
+	"svg-feTurbulence": {
+		"prefix": "svg-feTurbulence",
+		"body": [
+			"<feTurbulence baseFrequency=\"$1\" numOctaves=\"$2\" seed=\"$3\" stitchTiles=\"$4\" type=\"$5\"/>$6"
+		],
+		"description": "This filter primitive creates an image using the Perlin turbulence function. It allows the synthesis of artificial textures like clouds or marble."
+	},
 	"svg-filter": {
 		"prefix": "svg-filter",
 		"body": [
@@ -339,6 +392,13 @@
 			"</script>$2"
 		],
 		"description": "A SVG script element is equivalent to the script element in HTML and thus is the place for scripts (e.g., ECMAScript)."
+	},
+	"svg-set": {
+		"prefix": "svg-set",
+		"body": [
+			"<set to=\"$1\" />$2"
+		],
+		"description": "The set element provides a simple means of just setting the value of an attribute for a specified duration."
 	},
 	"svg-stop": {
 		"prefix": "svg-stop",
