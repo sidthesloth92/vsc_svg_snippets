@@ -1,0 +1,11 @@
+{
+	"svg-svg" : {
+		"prefix": "svg-svg",
+		"body" : [
+			"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"$1\" height=\"$2\" viewBox=\"$3\">",
+			"\t$4",
+			"</svg>$5"
+		],
+		"description": "The svg element can be used to embed an SVG fragment inside the current document."
+	}
+}

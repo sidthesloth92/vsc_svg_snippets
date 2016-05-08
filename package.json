@@ -1,0 +1,41 @@
+{
+    "name": "svg-snippets",
+    "displayName": "SVG Snippet",
+    "publisher": "sidthesloth",
+    "description": "A basic SVG snippet generator.",
+    "version": "0.0.1",
+    "license": "MIT",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#505050",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^0.10.x"
+    },
+    "homepage": "https://github.com/sidthesloth92/vsc_svg_snippets/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/sidthesloth92/vsc_svg_snippets/issues",
+        "email": "sidthesloth92@hotmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sidthesloth92/vsc_svg_snippets.git"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "svg",
+        "snippet",
+        "snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/svg.json"
+            }
+        ]
+    }
+}
