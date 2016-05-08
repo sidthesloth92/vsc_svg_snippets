@@ -1,5 +1,5 @@
 # README
-## Visual Studio Code SVG Boilerplate (Under Development)
+## Visual Studio Code SVG Boilerplate
  
 This extension provides the standard SVG code snippets used in all web applications. This saves you a lot of typing
 involved while writing SVG elements
@@ -118,4 +118,3 @@ If you have any issues report them at [Issues](https://github.com/sidthesloth92/
 
 ## Source
 [Github](https://github.com/sidthesloth92/vsc_svg_snippets)
-
