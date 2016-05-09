@@ -1,14 +1,8 @@
 # README
 ## Visual Studio Code Extension - SVG Snippets
  
-This extension provides the standard SVG code snippets used in all web applications. This saves you a lot of typing
+This is an for Visual Studio Code IDE. This extension provides the standard SVG code snippets used in all web applications. This saves you a lot of typing
 involved while writing SVG elements
-
-## Usage
-
-Type svg- and select the required SVG element from the intellisense dropdown.
-
-![alt text](http://s19.postimg.org/onxiqdwld/preview.gif "Snippets Preview")
 
 ## Installation
 
@@ -19,6 +13,12 @@ Type svg- and select the required SVG element from the intellisense dropdown.
 5. Type `SVG Snippets`
 6. Choose the extension from the drop down and press enter
 7. Reload Visual Studio Code
+
+## Usage
+
+Type 'svg-' in any HTML file and select the required SVG element from the intellisense dropdown. That's it!!
+
+![alt text](http://s19.postimg.org/onxiqdwld/preview.gif "Snippets Preview")
 
 ## Supported - SVG elements
 
