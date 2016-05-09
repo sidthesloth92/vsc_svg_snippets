@@ -1,5 +1,5 @@
 # README
-## Visual Studio Code SVG Boilerplate
+## Visual Studio Code SVG Snippets Extension
  
 This extension provides the standard SVG code snippets used in all web applications. This saves you a lot of typing
 involved while writing SVG elements
