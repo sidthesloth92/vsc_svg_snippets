@@ -33,7 +33,13 @@
     "contributes": {
         "snippets": [
             {
-                "language": ["html", "xml"],
+                "language": "html",
+                "path": "./snippets/svg.json"
+            }, {
+                "language": "xml",
+                "path": "./snippets/svg.json"
+            }, {
+                "language": "svg",
                 "path": "./snippets/svg.json"
             }
         ]
