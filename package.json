@@ -3,7 +3,7 @@
     "displayName": "SVG Snippets",
     "publisher": "sidthesloth",
     "description": "A basic SVG snippet generator.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "icon": "images/icon.png",
     "galleryBanner": {
