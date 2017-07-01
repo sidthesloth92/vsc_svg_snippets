@@ -18,7 +18,7 @@ involved while writing SVG elements
 
 Type 'svg-' in any HTML file and select the required SVG element from the intellisense dropdown. That's it!!
 
-![alt text](http://s19.postimg.org/onxiqdwld/preview.gif "Snippets Preview")
+![alt text](https://s19.postimg.org/onxiqdwld/preview.gif "Snippets Preview")
 
 ## Supported - SVG elements
 
